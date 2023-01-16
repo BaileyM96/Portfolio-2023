@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              slate: '#f8fafc',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Portfolio Bailey Mejia</title>
+</head>
+<body class="bg-slate-100">
+
+    <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <span class="text-black text-2xl font-bold ml-52">Bailey Mejia</span>
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button id="aboutBtn" type="button" class="inline-flex items-center justify-end rounded-md p-2 text-gray-400 hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/bars-3
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x-mark
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+            
+              </button>
+            </div>
+
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start" >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-amber-600 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
+      
+                  <a href="#" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+      
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+      
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+      
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                  </button>
+                </div>
+      
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu" style="display: none;">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-amber-600 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</a>
+      
+            <a href="#" class="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+      
+            <a href="#" class="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Photography</a>
+      
+            <a href="#" class="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class=" relative pt-10">
+        <header>
+          <h2 class="text-2xl text-center">About Me</h2>
+        </header>
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+            <img src="/assets/Bailey-Portrait-transformed (1).png" alt="" class="w-full">
+          </div>
+          <div class="md:w-1/2 pl-6 pt-10 flex justify-center">
+            <p class="text-lg">
+              Hello my name is Bailey Mejia and I am a full-stack developer with experience in leading and contributing to the front-end design of web applications using technologies such as React, HTML, CSS, JavaScript, SQL, NoSQL, Git, and GitHub.<br><br> I have a strong background in responsive web design and have played a pivotal role in the development of my most recent project, Skaro, and my previous project, Burnt.<br><br> I am a proactive and adaptable individual with strong communication and leadership skills. In my free time, I enjoy photography, PC gaming, coffee, listening to music, and travel.
+            </p>
+          </div>
+      </section>
+
+      
+</body>
+<script src="/public/js/about.js"></script>
+</html>
