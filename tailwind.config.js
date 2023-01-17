@@ -2,14 +2,16 @@
 module.exports = {
   content: [],
   theme: {
-    screens: {
-      'sm': '390px',
-    },
     extend: {
       colors: {
-        clifford: '#da373d'
-  
-      }
+        clifford: '#da373d',
+        cream: '#fffbf5',
+      },
+      screens: {
+        sm: '390px',
+        md: '768px',
+        xl: '1440px',
+      },
     },
   },
   plugins: [],
