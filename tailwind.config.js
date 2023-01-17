@@ -4,14 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        clifford: '#da373d',
-        cream: '#fffbf5',
-      },
-      screens: {
-        sm: '390px',
-        md: '768px',
-        xl: '1440px',
-      },
+        100: '#f5f5f5'
+      }
     },
   },
   plugins: [],
