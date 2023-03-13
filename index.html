@@ -16,6 +16,7 @@
             },
             screens: {
               md: '768px',
+              lg: '1640px',
               xl: '1875px',
             },
             fontFamily: {
@@ -118,7 +119,7 @@
         </div>
       </nav>
         <!-- About Me  -->
-      <section class=" relative pt-10 xl:pt-20 xl:pb-32">
+      <section class=" relative pt-10 lg:pt-0 lg:pb-32 xl:pt-20 xl:pb-32">
         <header class="pb-5 xl:pt-40 xl:pb-32">
           <h2 class="text-4xl text-amber-600 font-bold text-center" id="about">About</h2>
         </header>
@@ -126,7 +127,7 @@
             <div class="md:w-1/2 xl:flex xl:justify-evenly">
               <!-- add image here -->
 
-            <img src="./assets/Bailey Portrait.jpg" alt="Bailey Mejia" class="w-full xl:w-2/4 shadow-xl">
+            <img src="./assets/Bailey Portrait.jpg" alt="Bailey Mejia" class="w-full lg:w-2/4 xl:w-2/4 shadow-xl">
           </div>
           <div class="md:w-1/2 pl-6 pt-10 pr-9 flex justify-center xl:mr-20">
             <p class="text-lg xl:justify-items-center xl:text-center">
@@ -233,7 +234,7 @@
                 Love.Dev is a dating website that matches you with people who share your love of coding.
               </p>
               <p class="font-bold text-center text-base mb-4">
-                B2C, Business, Desktop, Mobile, Full-Stack
+                B2C, Desktop, Mobile, Full-Stack
               </p>
               <div class="flex absolute space-x-4 pt-8">
                 <i style="color: #e34c26;" class="fa-brands fa-html5 fa-w fa-xl"></i>
@@ -312,6 +313,40 @@
                 <i class="fa-brands fa-github fa-xl fa-w" style="color: #d97706;"></i>
               </a>
               <a href="https://mpe.herokuapp.com/login">
+                <i class="fa-solid fa-up-right-from-square fa-lg fa-w" style="color: #d97706;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Love.Dev card -->
+      <div class="flex justify-center mt-20 xl:hidden">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm">
+          <a href="#!">
+            <img class="rounded-t-lg" src="./assets/Love.Dev logo.jpg" alt="Love.Dev"/>
+          </a>
+          <hr>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl mb-2 font-semibold text-center">{ Love.Dev }</h5>
+            <p class="text-gray-700 text-base mb-4 text-center">
+              Love.Dev is a dating website that matches you with people who share your love of coding.
+            </p>
+            <P class="font-bold text-center">
+              B2C, Desktop, Mobile, Full-Stack
+            </P>
+            <div class="flex absolute space-x-4 pt-8">
+              <i style="color: #e34c26;" class="fa-brands fa-html5 fa-w fa-xl"></i>
+              <i style="color: #264de4;" class="fa-brands fa-css3-alt fa-w fa-xl"></i>
+              <i style="color: #f0db4f;" class="fa-brands fa-square-js fa-w fa-xl"></i>
+              <i style="color: #68a063;" class="fa-brands fa-node-js fa-w fa-xl"></i>
+              <i style="color: hotpink;" class="fa-solid fa-database fa-w fa-xl"></i>
+            </div>
+            <div class="flex justify-end space-x-4 pt-5">
+              <a href="https://github.com/BaileyM96/Love.Dev">
+                <i class="fa-brands fa-github fa-xl fa-w" style="color: #d97706;"></i>
+              </a>
+              <a href="https://love-dev.herokuapp.com/">
                 <i class="fa-solid fa-up-right-from-square fa-lg fa-w" style="color: #d97706;"></i>
               </a>
             </div>
