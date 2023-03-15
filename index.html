@@ -32,9 +32,9 @@
 </head>
 <body class="bg-gray-100">
 
-    <nav class="bg-amber-600 xl:fixed xl:top-0 xl:w-full xl:z-50" id="nav">
+    <nav class="bg-amber-600 fixed z-50 w-full xl:fixed xl:top-0 xl:w-full xl:z-50" id="nav">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
+          <div class="relative flex h-16  lg:items-center lg:justify-between items-center justify-between">
             <a href="#about">
               <span class="text-black text-2xl xl:text-3xl font-bold ml-52">Bailey Mejia</span>
             </a>
@@ -63,7 +63,9 @@
               </button>
             </div>
 
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start" >
+
+            <!-- Navbar -->
+            <div class="flex fixed z-50 flex-1 items-center justify-center sm:items-stretch sm:justify-start" >
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -118,18 +120,19 @@
           </div>
         </div>
       </nav>
+
         <!-- About Me  -->
-      <section class=" relative pt-10 lg:pt-0 lg:pb-32 xl:pt-20 xl:pb-32">
-        <header class="pb-5 xl:pt-40 xl:pb-32">
+      <section class=" relative  pt-28 lg:pt-0 lg:pb-32 xl:pt-20 xl:pb-32">
+        <header class="pb-5 lg:pt-40 xl:pt-40 lg:pb-32 xl:pb-32">
           <h2 class="text-4xl text-amber-600 font-bold text-center" id="about">About</h2>
         </header>
           <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/2 xl:flex xl:justify-evenly">
+            <div class="md:w-1/2 lg:flex xl:flex lg:justify-evenly xl:justify-evenly">
               <!-- add image here -->
 
-            <img src="./assets/Bailey Portrait.jpg" alt="Bailey Mejia" class="w-full lg:w-2/4 xl:w-2/4 shadow-xl">
+            <img src="./assets/Bailey Portrait.jpg"  alt="Bailey Mejia" class="w-full lg:w-2/4  xl:w-2/4 shadow-xl">
           </div>
-          <div class="md:w-1/2 pl-6 pt-10 pr-9 flex justify-center xl:mr-20">
+          <div class="md:w-1/2 pl-6 pt-10 pr-9 flex justify-center lg:mr-20 xl:mr-20">
             <p class="text-lg xl:justify-items-center xl:text-center">
               Hello, my name is Bailey Mejia and I am a full-stack developer with a passion for creating visually stunning and user-friendly web applications. My expertise lies in utilizing a wide range of technologies such as HTML5, CSS3, JavaScript, node.js, express.js, Bootstrap, Tailwind CSS, SQL, and JSON to build and design the front-end of web applications. My proficiency in these technologies has enabled me to lead and contribute to the development of multiple projects such as Skaro and Burnt, where I played a pivotal role in creating responsive web designs.
               <br>
@@ -152,7 +155,7 @@
 
 
       <!-- Burnt desktop view -->
-      <article class="hidden xl:block">
+      <article class="hidden lg:block xl:block">
         <header class=" flex justify-center">
           <h2 class="text-2xl pb-12 font-semibold pr-48">BURNT</h2>
         </header>
@@ -185,7 +188,7 @@
       </article>
 
       <!-- Skaro Desktop View -->
-      <article class="hidden xl:block">
+      <article class="hidden lg:block xl:block">
         <header class=" flex justify-center">
           <h2 class="text-2xl pb-12 font-semibold pl-48 pt-20">Skaro</h2>
         </header>
@@ -220,8 +223,8 @@
       </article>
 
 
-      <!-- Love.Dev -->
-      <article class="hidden xl:block">
+      <!-- Love.Dev desktop view -->
+      <article class="hidden lg:block xl:block">
         <header class=" flex justify-center">
           <h2 class="text-2xl pb-12 font-semibold pl-48 pt-20">{ Love.Dev }</h2>
         </header>
@@ -256,7 +259,7 @@
       </article>
 
       <!-- Burnt mobile view -->
-      <div class="flex justify-center xl:hidden">
+      <div class="flex justify-center lg:hidden xl:hidden">
         <div class="rounded-lg shadow-lg bg-white max-w-sm">
           <a href="#!">
             <img class="rounded-t-lg" src="./assets/Burnt (2).png" alt="Burnt Logo"/>
@@ -287,7 +290,7 @@
         </div>
       </div>
       <!-- Skaro Card -->
-      <div class="flex justify-center mt-20 xl:hidden">
+      <div class="flex justify-center mt-20 lg:hidden xl:hidden">
         <div class="rounded-lg shadow-lg bg-white max-w-sm">
           <a href="#!">
             <img class="rounded-t-lg" src="./assets/Skaro logo.jpg" alt="Skaro"/>
@@ -321,7 +324,7 @@
       </div>
 
       <!-- Love.Dev card -->
-      <div class="flex justify-center mt-20 xl:hidden">
+      <div class="flex justify-center mt-20 lg:hidden xl:hidden">
         <div class="rounded-lg shadow-lg bg-white max-w-sm">
           <a href="#!">
             <img class="rounded-t-lg" src="./assets/Love.Dev logo.jpg" alt="Love.Dev"/>
@@ -363,7 +366,7 @@
           <h2 class="text-4xl text-amber-600 font-bold pt-16" id="work">Work History</h2>
         </header>
       <!-- component -->
-      <div class="xl:flex xl:justify-center">
+      <div class=" lg:flex xl:flex lg:justify-center xl:justify-center">
         <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
           <div class="flex justify-center xl:justify-center -mt-16">
             <img class="w-28 h-28" src="./assets/gmbi_logo_icon_lg.png">
@@ -377,10 +380,10 @@
           </div>
         </div>
       </div>
-      <!-- RTA -->
-      <div class="xl:flex xl:justify-center">
+      <!-- RTA Work expierence  -->
+      <div class="lg:flex xl:flex lg:justify-center xl:justify-center">
         <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
-          <div class="flex justify-center xl:flex xl:justify-center md:justify-end -mt-16">
+          <div class=" lg:flex flex justify-center xl:flex xl:justify-center md:justify-end -mt-16">
             <img class="w-32 h-28 scale-50 -translate-y-1 rounded-full " src="./assets/riverside-transit-agency-squarelogo-1585310790175.png">
             <div class="w-20 h-20 scale-90 translate-y-4 absolute rounded-full border-4 border-amber-600"></div>
           </div>
@@ -392,23 +395,17 @@
           </div>
         </div>
       </div>
-
-      <!-- slide carousel -->
-      <header class="flex justify-center">
-        <h2 class="text-4xl text-amber-600 font-bold pt-16">Skills</h2>
-      </header>
-
  
       
 
       <!-- Back to top button for mobile -->
-        <div class="flex justify-end pb-6 pr-6">
+        <!-- <div class="flex justify-end pb-6 pr-6">
           <button type="button" id="backToTop">
             <a href="#nav">
               <i class="fa-solid fa-arrow-up fa-2xl fa-bounce" style="color: #d97706; --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i>
             </a>
           </button>
-        </div>
+        </div> -->
 
 
         <!-- //Footer with all my info -->
@@ -429,7 +426,7 @@
                 <i class="fa-brands fa-github fa-xl"></i>
               </a>
 
-              <a href="https://drive.google.com/drive/folders/1Og2KVGKUVqBwn-r8nDZyz4Wi35y4KHVI?usp=sharing">
+              <a href="https://docs.google.com/document/d/1wfSigKiRJx9AsaeLIzl61lVNB87l36RR8-IphAazcTs/edit?usp=share_link">
                 <i class="fa-solid fa-file fa-xl"></i>
               </a>
             </div>

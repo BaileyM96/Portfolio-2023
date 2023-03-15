@@ -14,5 +14,19 @@ aboutBurgerBtn.addEventListener('click', () => {
 });
 
 
+//Want to make the elements appear...
+//By having it fade in when you scroll
+// window.addEventListener('scroll', function() {
+//     const element = this.document.querySelector('.opacity-0');
+//     const position = element.getBoundingClientRect().top;
+
+//     if (position < this.window.innerHeight) {
+//         element.classList.add('opacity-100');
+//         element.classList.remove('opacity-0');
+
+//     }
+// });
+
+
 
 
