@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: [],
+  content: {
+    transform: (content) => content.replace(/taos:/g, ''),
+  },
   theme: {
     extend: {
       colors: {
@@ -9,5 +11,12 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('taos/plugin')
+  ],
+  safelist: [
+    '!duration-0',
+    '!delay-0',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ]
 }
